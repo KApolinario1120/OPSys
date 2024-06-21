@@ -1,1 +1,25 @@
-test
+Project Overview
+
+Frontend: Simple Node.js application to submit orders via HTTP requests.
+
+Backend: Serverless architecture using AWS Lambda, API Gateway, SQS, and DynamoDB.
+
+Containerized Service: Use AWS EKS for a Java-based service to validate orders.
+
+Event-Driven: Orders are processed asynchronously using SQS.
+
+
+Components and Technologies
+API Gateway: To expose RESTful endpoints for order submission.
+
+Lambda Functions: To handle incoming orders, process them, and store them in DynamoDB.
+
+SQS: To queue orders for asynchronous processing.
+
+DynamoDB: To store order details.
+
+EKS (Elastic Kubernetes Service): To run a containerized Java service for complex order validations.
+
+Node.js: For the frontend and AWS Lambda functions.
+
+Java: For the validation service running in EKS.
