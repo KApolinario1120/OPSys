@@ -1,0 +1,18 @@
+{
+  "name": "opsys",
+  "version": "1.0.0",
+  "description": "OpSys Project",
+  "main": "Node.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "C:\\Users\\kevin\\OneDrive\\Desktop\\OpSys\\OPSys"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
