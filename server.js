@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const PORT = 3000;
+app.use(express.json());
 
 app.get('/', (req, res) =>{
     res.status(200);
@@ -12,7 +13,7 @@ app.get('/hello', (req, res) =>{
     res.status(200).send("<h1>Hello! This is a formatted response!</h1>");
 });
 
-app.post('/submit-order', (req, res) =>{
+app.post('/orders', (req, res) =>{
     const order = req.body;
     // TODO - setup API Gateway and connect endpoint here
     res.status(200).send({ message: 'Order Recieved', order });

@@ -6,5 +6,5 @@ http.createServer(function(req, res) {
     res.end('Connection Successful');
 }).listen(8080);
 
-const x = fetch(http.STATUS_CODES);
+//const x = fetch(http.STATUS_CODES);
 console.log(x);
